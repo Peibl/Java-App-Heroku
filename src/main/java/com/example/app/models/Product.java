@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idProducto;
+    private Long id;
     private String tipo;
     private String marca;
     private String modelo;
@@ -20,17 +20,15 @@ public class Product {
     private Integer stock;
     private String proveedor;
     private String email_proveedor;
-    
 
-    public Long getIdProducto() {
-		return idProducto;
+
+	public Long getId() {
+		return id;
 	}
 
-
-	public void setIdProducto(Long idProducto) {
-		this.idProducto = idProducto;
+	public void setId(Long id) {
+		this.id = id;
 	}
-
 
 	public String getTipo() {
 		return tipo;

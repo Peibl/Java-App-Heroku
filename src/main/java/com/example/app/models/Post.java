@@ -8,8 +8,8 @@ import javax.persistence.*;
 import java.sql.Blob;
 import java.util.*;
 
-@Entity
-@Table(name = "post", schema = "dbapp", catalog = "")
+//@Entity
+//@Table(name = "post", schema = "dbapp", catalog = "")
 //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 //@JsonIdentityInfo(
 //        generator = ObjectIdGenerators.PropertyGenerator.class,

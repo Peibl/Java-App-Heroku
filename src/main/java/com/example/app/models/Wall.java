@@ -6,8 +6,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "wall", schema = "dbapp", catalog = "")
+//@Entity
+//@Table(name = "wall", schema = "dbapp", catalog = "")
 //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 //@JsonIdentityInfo(
 //        generator = ObjectIdGenerators.PropertyGenerator.class,

@@ -4,8 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "config", schema = "dbapp", catalog = "")
+//@Entity
+//@Table(name = "config", schema = "dbapp", catalog = "")
 public class Config {
     @Id
     private Long id;

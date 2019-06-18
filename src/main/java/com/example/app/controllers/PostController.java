@@ -16,27 +16,28 @@ import java.net.URI;
 
 @RestController
 public class PostController {
-    @Autowired
-    PostRepository postRepository;
+//    @Autowired
+//    PostRepository postRepository;
 
     @CrossOrigin
     @PostMapping("/posts")
     public ResponseEntity<Object> createUser(@RequestBody Post post) {
+//
+//        Post savedPost = postRepository.save(post);
+//
+//        Wall wall = new Wall();
+//        wall.setUser(savedPost.getUser_creator());
+//        wall.setPost(savedPost);
+//
+//        savedPost.getUsers().add(wall);
+//        postRepository.save(savedPost);
 
-        Post savedPost = postRepository.save(post);
 
-        Wall wall = new Wall();
-        wall.setUser(savedPost.getUser_creator());
-        wall.setPost(savedPost);
-
-        savedPost.getUsers().add(wall);
-        postRepository.save(savedPost);
-
-
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                .buildAndExpand(savedPost.getId()).toUri();
-
-        return ResponseEntity.created(location).build();
+//        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+//                .buildAndExpand(savedPost.getId()).toUri();
+//
+//        return ResponseEntity.created(location).build();
+        return null;
 
     }
 

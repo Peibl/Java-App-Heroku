@@ -1,19 +1,6 @@
 package com.example.app.controllers;
 
-import com.example.app.exceptions.UserNotFoundException;
-import com.example.app.models.Config;
-import com.example.app.models.User;
-import com.example.app.models.Wall;
-import com.example.app.repositories.ConfigRepository;
-import com.example.app.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import java.net.URI;
-import java.util.List;
-import java.util.Optional;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
